@@ -23,14 +23,15 @@ From the command line
 ```sh
 ipfs-only-hash <file>
 
-# or pipe in 
+# or pipe in
 echo "hello world" | ipfs-only-hash
 ```
 
 As a library
 
 ```js
-const Hash = require('ipfs-only-hash')
+import {Hash} from 'ipfs-only-hash';
+
 const data = 'hello world!'
 const hash = await Hash.of(data)
 console.log(hash) // QmTp2hEo8eXRp6wg7jXv1BLCMh5a4F3B7buAUZNZUu772j

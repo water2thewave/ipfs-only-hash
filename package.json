@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "description": "Just enough code to calculate the IPFS hash for some data",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "ipfs-only-hash": "cli.js"
   },

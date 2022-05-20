@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-const fs = require('fs')
-const meow = require('meow')
-const Hash = require('.')
+import {fs} from 'fs';
+import { meow } from 'meow';
+import { Hash } from '.';
 
 const cli = meow(`
   Usage
-    # get the cid v1 for the file 
+    # get the cid v1 for the file
     $ ipfs-only-hash <file>
 
     # get the cid v0 for data from stdin
